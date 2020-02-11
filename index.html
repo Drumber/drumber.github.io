@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Drumber - Project Overview</title>
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <script defer src="js/rellax.js"></script>
+        <script defer src="js/particles.js"></script>
+        <script defer src="js/app.js"></script>
+        <script defer src="js/main.js"></script>
+
+        <!--Load support script for older browsers that do not support HTML5 tags-->
+        <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body data-spy="scroll" data-target="#nav" data-offset="350">
+        <!--HEADER-->
+        <nav id="nav" class="navbar navbar-expand-sm navbar-dark fixed-top">
+            <a class="navbar-brand" href="https://github.com/Drumber">Drumber</a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#social">Social</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--HERO-->
+        <section id="hero">
+            <div id="particles-js"></div>
+            <div class="hero-container rellax" data-rellax-speed="-8" data-rellax-zindex="-1">
+                <h1>Drumber</h1>
+                <h2>Projects Overview</h2>
+                <a href="#social"><button type="button" class="btn btn-outline-light" data-target="#social">CONTACT</button></a>
+                <a href="#projects" class="arrow"><span></span></a>
+            </div>
+        </section>
+
+        <!--MAIN-->
+        <main>
+            <!--Projects section-->
+            <section class="projects">
+                <h1 class="heading">Projects</h1>
+                <div id="projects">
+                    <div class="flex-container">
+                        <div id="remotelight" class="hover-zoom shadow-card">
+                            <h4>RemoteLight</h4>
+                            <a href="https://github.com/Drumber/RemoteLight/releases"><img src="img/GitHub-Mark-64px.png" alt="GitHub logo"></a>
+                            <p id="remotelight-version" class="github-version">-</p>
+                        </div>
+                        <div id="remotelightserver" class="hover-zoom shadow-card">
+                            <h4>RemoteLightServer</h4>
+                            <a href="https://github.com/Drumber/RemoteLightServer/releases"><img src="img/GitHub-Mark-64px.png" alt="GitHub logo"></a>
+                            <p id="remotelightserver-version" class="github-version">-</p>
+                        </div>
+                        <div id="remotelightweb" class="hover-zoom shadow-card">
+                            <h4>RemoteLightWeb</h4>
+                            <a href="https://github.com/Drumber/RemoteLightWeb/releases"><img src="img/GitHub-Mark-64px.png" alt="GitHub logo"></a>
+                            <p id="remotelightweb-version" class="github-version">-</p>
+                        </div>
+                    </div>
+                    <a href="https://github.com/Drumber?tab=repositories" id="repositories-button" class="btn btn-outline-secondary" role="button">MORE</a>
+                </div>
+            </section>
+
+            <!--Social and Contact section-->
+            <section class="social">
+                <h1 class="heading">Social and Contact</h1>
+                <div id="social">
+                    <div class="flex-container">
+                        <div id="youtube" class="hover-zoom shadow-card">
+                            <h4>YouTube</h4>
+                            <a href="https://www.youtube.com/channel/UCASWvOcP_Z-NcZH3lEnItzw"><img src="img/youtube_social_icon_dark.png" alt="YouTube logo"></a>
+                        </div>
+                        <div id="email" class="hover-zoom shadow-card">
+                            <h4>E-Mail</h4>
+                            <a href="mailto:drumberhd+contact@gmail.com"><img src="img/mail-icon.png" alt="E-Mail logo"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--FOOTER-->
+        <footer>
+            <p>Copyright &copy 2020 Lars O.</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,237 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.heading {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px 0;
+}
+
+/*===========================
+# Layouts & Effects
+  ===========================*/
+
+.hover-zoom {
+    transition: transform .2s;
+}
+.hover-zoom:hover {
+    transform: scale(1.05);
+}
+
+.shadow-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+/*===========================
+# Navigation bar
+  ===========================*/
+.navbar {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+#nav.scrolled {
+    background: rgba(52, 58, 64, 0.98);
+}
+
+/*===========================
+# Hero
+  ===========================*/
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #ffffff;
+}
+
+#hero::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    perspective: 2px;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+  
+#hero .hero-container {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: 1px 1px 8px #000;
+}
+
+#hero h1 {
+    margin: 30px 0 10px 0;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+}
+  
+#hero h2 {
+    color: #eee;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+/* === Scroll down arrow === */
+/* https://codepen.io/nxworld/pen/OyRrGy */
+.arrow span {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: arrowAnimation 1.5s infinite;
+    animation: arrowAnimation 1.5s infinite;
+    box-sizing: border-box;
+}
+  
+@-webkit-keyframes arrowAnimation {
+    0% {
+      -webkit-transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+}
+@keyframes arrowAnimation {
+    0% {
+      transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+}
+
+/*===========================
+# Main content
+  ===========================*/
+
+main:not(#hero) {
+    width: 100%;
+    position: relative;
+    padding: 0 10px;
+    padding-top: 32px;
+    z-index: 10;
+    max-width: 750px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+.projects {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#remotelight,
+#remotelightserver,
+#remotelightweb {
+    flex: 1;
+    background: #E2DEE0;
+    padding: 16px;
+    margin: 10px;
+    width: min-content;
+    min-height: 200px;
+    text-align: center;
+}
+
+#projects h4 {
+    margin-bottom: 20px;
+}
+
+.github-version {
+    margin-top: 5px;
+}
+
+#repositories-button {
+    margin: 20px auto;
+    display: block;
+}
+
+
+.social {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+#social h4 {
+    margin-bottom: 20px;
+}
+
+#youtube,
+#email {
+    background: #E2DEE0;
+    flex: 1;
+    padding: 16px;
+    margin: 10px;
+    width: min-content;
+    min-width: 200px;
+    min-height: 200px;
+    text-align: center;
+}
+
+/*===========================
+# Footer
+  ===========================*/
+
+footer {
+    height: 80px;
+    background: rgba(52, 58, 64);
+    position: relative;
+    z-index: 30;
+}
+
+footer p {
+    padding: 16px;
+    text-align: center;
+    color: #eee;
+}
