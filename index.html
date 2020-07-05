@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Drumber - Project Overview</title>
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="css/light-theme.css" id="theme">
+        <script defer src="js/darkmode-switch.js"></script>
+        <!--FontAwesome-->
+        <script defer src="js/all.js"></script>
         <!--Bootstrap-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -41,6 +45,9 @@
                         <a class="nav-link" href="#social">Social</a>
                     </li>
                 </ul>
+                <button onclick="toggleDarkMode();" class="icon-btn my-2 my-sm-0" title="Toggle Dark Mode">
+                    <i class="fas fa-adjust"></i>
+                </button>
             </div>
         </nav>
 
@@ -64,17 +71,17 @@
                     <div class="flex-container">
                         <div id="remotelight" class="hover-zoom shadow-card">
                             <h4>RemoteLight</h4>
-                            <a href="https://github.com/Drumber/RemoteLight/releases"><img src="img/GitHub-Mark-64px.png" alt="GitHub logo"></a>
+                            <a href="https://github.com/Drumber/RemoteLight/releases"><i class="fab fa-github fa-5x icon-a"></i></a>
                             <p id="remotelight-version" class="github-version">-</p>
                         </div>
                         <div id="remotelightserver" class="hover-zoom shadow-card">
                             <h4>RemoteLightServer</h4>
-                            <a href="https://github.com/Drumber/RemoteLightServer/releases"><img src="img/GitHub-Mark-64px.png" alt="GitHub logo"></a>
+                            <a href="https://github.com/Drumber/RemoteLightServer/releases"><i class="fab fa-github fa-5x icon-a"></i></a>
                             <p id="remotelightserver-version" class="github-version">-</p>
                         </div>
                         <div id="remotelightweb" class="hover-zoom shadow-card">
                             <h4>RemoteLightWeb</h4>
-                            <a href="https://github.com/Drumber/RemoteLightWeb/releases"><img src="img/GitHub-Mark-64px.png" alt="GitHub logo"></a>
+                            <a href="https://github.com/Drumber/RemoteLightWeb/releases"><i class="fab fa-github fa-5x icon-a"></i></a>
                             <p id="remotelightweb-version" class="github-version">-</p>
                         </div>
                     </div>
@@ -89,15 +96,15 @@
                     <div class="flex-container">
                         <div id="youtube" class="hover-zoom shadow-card">
                             <h4>YouTube</h4>
-                            <a href="https://www.youtube.com/channel/UCASWvOcP_Z-NcZH3lEnItzw"><img src="img/youtube_social_icon_dark.png" alt="YouTube logo"></a>
+                            <a href="https://www.youtube.com/channel/UCASWvOcP_Z-NcZH3lEnItzw"><i class="fab fa-youtube fa-5x icon-a"></i></a>
                         </div>
                         <div id="discord" class="hover-zoom shadow-card">
                             <h4>Discord</h4>
-                            <a href="https://discord.gg/FGfgPJg"><img src="img/discord-logo-black.png" alt="Discord logo"></a>
+                            <a href="https://discord.gg/FGfgPJg"><i class="fab fa-discord fa-5x icon-a"></i></a>
                         </div>
                         <div id="email" class="hover-zoom shadow-card">
                             <h4>E-Mail</h4>
-                            <a href="mailto:drumberhd+contact@gmail.com"><img src="img/mail-icon.png" alt="E-Mail logo"></a>
+                            <a href="mailto:drumberhd+contact@gmail.com"><i class="fas fa-envelope fa-5x icon-a"></i></a>
                         </div>
                     </div>
                 </div>
@@ -106,7 +113,7 @@
 
         <!--FOOTER-->
         <footer>
-            <p>Copyright &copy 2020 Lars O.</p>
+            <p>Copyright &copy; 2020 Lars O.</p>
         </footer>
     </body>
 </html>

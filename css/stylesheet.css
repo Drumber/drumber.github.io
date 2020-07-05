@@ -7,6 +7,11 @@ body {
     box-sizing: border-box;
 }
 
+.dark {
+    background-color: #1f1f1f;
+    color: #cdcdcd;
+}
+
 .heading {
     text-align: center;
     text-transform: uppercase;
@@ -14,7 +19,7 @@ body {
 }
 
 /*===========================
-# Layouts & Effects
+# Layouts, Styles & Effects
   ===========================*/
 
 .hover-zoom {
@@ -25,7 +30,12 @@ body {
 }
 
 .shadow-card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #E2DEE0;
+}
+
+.dark .shadow-card {
+    background: rgba(255,255,255,.02);
 }
 
 .flex-container {
@@ -34,6 +44,35 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: stretch;
+}
+
+.icon-btn {
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    color: rgba(255,255,255,.75);
+}
+.icon-btn:focus {
+    outline: 0;
+}
+.icon-btn:active {
+    scale: 0.95;
+}
+.icon-btn:hover {
+    color: rgba(255,255,255,1);
+}
+
+.icon-a {
+    color: #212529;
+}
+.icon-a:hover {
+    color: #212529D0;
+}
+.dark .icon-a {
+    color: #cdcdcd;
+}
+.dark .icon-a:hover {
+    color: #cdcdcdD0;
 }
 
 /*===========================
@@ -50,6 +89,9 @@ body {
 #nav.scrolled {
     background: rgba(52, 58, 64, 0.98);
 }
+.dark #nav.scrolled {
+    background: rgba(24, 24, 24, 0.95);
+}
 
 /*===========================
 # Hero
@@ -65,6 +107,9 @@ body {
     background-repeat: no-repeat;
     position: relative;
     color: #ffffff;
+}
+.dark #hero {
+    background: linear-gradient(150deg,#202535 15%,#424a74 70%,#5a67a1 94%);
 }
 
 #hero::before {
@@ -167,6 +212,10 @@ main:not(#hero) {
     background: #ffffff;
 }
 
+.dark main:not(#hero) {
+    background: #1f1f1f;
+}
+
 .projects {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -176,7 +225,6 @@ main:not(#hero) {
 #remotelightserver,
 #remotelightweb {
     flex: 1;
-    background: #E2DEE0;
     padding: 16px;
     margin: 10px;
     width: min-content;
@@ -210,7 +258,6 @@ main:not(#hero) {
 #youtube,
 #discord,
 #email {
-    background: #E2DEE0;
     flex: 1;
     padding: 16px;
     margin: 10px;
@@ -226,7 +273,7 @@ main:not(#hero) {
 
 footer {
     height: 80px;
-    background: rgba(52, 58, 64);
+    background: rgb(52, 58, 64);
     position: relative;
     z-index: 30;
 }
@@ -235,4 +282,8 @@ footer p {
     padding: 16px;
     text-align: center;
     color: #eee;
+}
+
+.dark footer {
+    background: rgba(24, 24, 24, 0.95);
 }
